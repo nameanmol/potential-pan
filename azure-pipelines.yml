@@ -45,3 +45,14 @@ steps:
     #checkStyleRunAnalysis: false # Optional
     #findBugsRunAnalysis: false # Optional
     #pmdRunAnalysis: false # Optional
+
+
+    - task: AndroidSigning@2
+  inputs:
+    apkFiles: '**/*.apk'
+    jarsign: true
+    jarsignerKeystoreFile: 'pathToYourKeystoreFile'
+    jarsignerKeystorePassword: '$(jarsignerKeystorePassword)'
+    jarsignerKeystoreAlias: 'yourKeystoreAlias'
+    jarsignerKeyPassword: '$(jarsignerKeyPassword)'
+    zipalign: true
