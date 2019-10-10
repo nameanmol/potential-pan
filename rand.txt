@@ -2,4 +2,8 @@ i inserted in master branch
 
 i inserted data in b1 too
 
+<<<<<<< HEAD
 master involed
+=======
+b1 involved
+>>>>>>> b1
